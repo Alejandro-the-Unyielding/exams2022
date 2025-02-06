@@ -1,4 +1,4 @@
-package a01a.e1;
+package e1;
 
 import static org.junit.Assert.*;
 import java.util.*;

@@ -1,4 +1,4 @@
-package a01a.sol2;
+package sol2;
 
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -8,6 +8,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+@SuppressWarnings("unused")
 public class LogicImpl implements Logic {
 
     private static final List<Integer> ASCENDING = List.of(0,1,2);
