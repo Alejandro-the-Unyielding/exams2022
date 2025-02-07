@@ -1,4 +1,4 @@
-package a01b.sol1;
+package sol1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,6 +43,7 @@ public class FlattenerFactoryImpl implements FlattenerFactory {
     }
     
 
+    @SuppressWarnings("unused")
     @Override
     public <X, Y> Flattener<X, Y> each(Function<List<X>, Y> mapper) {
         return generic((s,l) -> List.of(mapper.apply(l)), s -> true);
@@ -54,6 +55,7 @@ public class FlattenerFactoryImpl implements FlattenerFactory {
         return each(l -> l.stream().mapToInt(i->i).sum());
     }
 
+    @SuppressWarnings("unused")
     @Override
     public <X> Flattener<X, X> flattenAll() {
         return generic(this::append, s -> false);
@@ -64,6 +66,7 @@ public class FlattenerFactoryImpl implements FlattenerFactory {
         return generic((s,l) -> List.of(append(s,l).stream().reduce("",String::concat)), s -> !s.isEmpty());
     }
 
+    @SuppressWarnings("unused")
     @Override
     public Flattener<Integer, Integer> sumVectors() {
         return generic(this::sumTwoVectors, s -> false);

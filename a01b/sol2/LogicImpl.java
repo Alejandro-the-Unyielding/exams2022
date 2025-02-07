@@ -1,4 +1,4 @@
-package a01b.sol2;
+package sol2;
 
 import java.util.HashSet;
 import java.util.Set;

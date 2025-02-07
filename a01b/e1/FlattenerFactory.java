@@ -1,4 +1,4 @@
-package a01b.e1;
+package e1;
 
 import java.util.List;
 import java.util.function.Function;

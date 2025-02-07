@@ -1,4 +1,4 @@
-package a01b.sol2;
+package sol2;
 
 import javax.swing.*;
 import java.util.*;
@@ -9,6 +9,7 @@ public class GUI extends JFrame {
     
     private final Map<JButton, Pair<Integer,Integer>> cells = new HashMap<>();
     private Logic logic;
+    @SuppressWarnings("unused")
     private final int size;
     
     public GUI(int size) {
