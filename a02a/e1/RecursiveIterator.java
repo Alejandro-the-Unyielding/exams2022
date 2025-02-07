@@ -1,4 +1,4 @@
-package a02a.e1;
+package e1;
 
 /**
  * An interface modelling a recursive iterator over elements of type X, namely, 

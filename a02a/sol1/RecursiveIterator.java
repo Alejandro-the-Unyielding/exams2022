@@ -1,4 +1,4 @@
-package a02a.sol1;
+package sol1;
 
 /**
  * An interface modelling a recursive iterator over elements of type X, namely, 
